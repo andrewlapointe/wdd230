@@ -1,0 +1,95 @@
+:root {
+    --main-blue: #468189; /*teal*/
+    --rich-black: #031926; /*rich black*/
+    --blue-gray: #9DBEBB; /*ash gray*/
+    --cream: #F4E9CD; /*parchment*/
+
+}
+body {
+    margin-top: 0;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-bottom: 0;
+    background-color: var(--cream);
+    color: var(--rich-black);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+header { 
+    background-color: var(--main-blue);
+    margin-bottom: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: grid;
+    grid-template-columns: 4fr 5fr;
+    gap: 0;
+}
+header img {
+    max-width: 150px;
+    margin: auto 10px auto auto;
+}
+header h1 {
+    width: fit-content;
+    margin: auto auto auto 10px ;
+    color: white;
+}   
+nav {
+    background-color: var(--rich-black);
+    color: white;
+    text-align: center; 
+}
+li.nav-element {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+nav ul {
+    display: block;
+    margin-top: 0;
+    list-style: none;
+
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.6em;    
+}
+nav a:hover {
+    text-decoration: none;
+    color: var(--blue-gray);
+    
+}
+main {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+main h2 {
+    text-align: center;
+    /* text-decoration: underline; */
+    border-bottom: 1px solid var(--rich-black);
+}
+main section.card {
+    border: 1px solid var(--rich-black);
+    border-radius: 4px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+section.card h3  {
+    margin-top: 0;
+    background-color: var(--main-blue);
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+section.card#information {
+    text-align: center;
+}
+footer {
+    background-color: var(--main-blue);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+}
+footer p {
+    text-align: center;
+    margin-bottom: 0;
+}
