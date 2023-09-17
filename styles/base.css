@@ -1,5 +1,5 @@
 :root {
-    --main-blue: #468189; /*teal*/
+    --main-blue: #335961; /*teal old: 468189*/ 
     --rich-black: #031926; /*rich black*/
     --blue-gray: #9DBEBB; /*ash gray*/
     --cream: #F4E9CD; /*parchment*/
@@ -88,6 +88,7 @@ footer {
     padding-top: 10px;
     padding-bottom: 10px;
     margin-bottom: 0;
+    color: white;
 }
 footer p {
     text-align: center;
