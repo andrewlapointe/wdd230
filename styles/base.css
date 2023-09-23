@@ -4,7 +4,10 @@
     --blue-gray: #9DBEBB; /*ash gray*/
     --cream: #F4E9CD; /*parchment*/
 
+
 }
+/* @import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap'); */
+
 body {
     margin-top: 0;
     margin-right: 10%;
@@ -12,7 +15,8 @@ body {
     margin-bottom: 0;
     background-color: var(--cream);
     color: var(--rich-black);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic  Medium', 'Arial Narrow', Arial, sans-serif;
+    /* font-family: 'East Sea Dokdo', cursive; */
 }
 header { 
     background-color: var(--main-blue);
@@ -45,6 +49,7 @@ nav ul {
     display: block;
     margin-top: 0;
     list-style: none;
+    padding-inline-start: 0px;
 
 }
 nav ul li a {
@@ -60,12 +65,19 @@ nav a:hover {
 main {
     margin-left: 5%;
     margin-right: 5%;
+    padding-bottom: 100px;
 }
 main h2 {
     text-align: center;
     /* text-decoration: underline; */
     border-bottom: 1px solid var(--rich-black);
 }
+main section {
+    max-width: 40%;
+    margin: 2.5%;
+    margin: auto;
+}
+
 main section.card {
     border: 1px solid var(--rich-black);
     border-radius: 4px;
@@ -73,12 +85,16 @@ main section.card {
     margin-bottom: 20px;
 }
 section.card h3  {
+    min-width: 100%;
+    justify-self: center;
     margin-top: 0;
     background-color: var(--main-blue);
     color: white;
     text-align: center;
     padding-top: 5px;
     padding-bottom: 5px;
+    
+    margin-left: auto;
 }
 section.card#information {
     text-align: center;
@@ -89,8 +105,19 @@ footer {
     padding-bottom: 10px;
     margin-bottom: 0;
     color: white;
+    position:fixed;
+    width:80%;
+    bottom:0px;
 }
 footer p {
     text-align: center;
     margin-bottom: 0;
+
 }
+
+
+
+
+.line-break {
+    width: 100%;
+  }

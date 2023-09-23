@@ -15,14 +15,18 @@
     <meta property="og:image" content="images/profile-min-optimized.jpg" />
     <link rel="icon" href="favicon.ico">
     <title>Andrew LaPointe - WDD 230 - Web Frontend Development</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">s
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=East+Sea+Dokdo"> -->
+
     <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
     <header>
-        <img src="images/profile-min-optimized.jpg" alt="profile image">
+        <img src="images/profile-min-optimized.jpg" alt="site creator wearing a hoodie">
         <h1>Andrew LaPointe</h1>
     </header>
     <nav>
@@ -37,17 +41,21 @@
     </nav>
     <main>
         <h2>WDD 230: Web Frontend Development</h2>
-        <section class="card">
-            <h3>Learning Activities</h3>
-            <ul>
-                <li><a href="">activity 1</a></li>
-            </ul>
-        </section>
-        <section class="card" id="information">
-            <h3>Information</h3>
-            <p>Weathers Crazy Ammiright? (placeholder)</p>
-            <p>Total Site Visits > 1 (placeholder)</p>
-        </section>
+        <div class="sections">
+            <section class="card">
+                <!-- <div class="line-break"></div> -->
+                <h3>Learning Activities</h3>
+                <ul>
+                    <li><a href="">activity 1</a></li>
+                </ul>
+            </section>
+            <section class="card" id="information">
+                <h3>Information</h3>
+                <p>Weathers Crazy Ammiright? (placeholder)</p>
+                <p>Total Site Visits > 1 (placeholder)</p>
+            </section>
+        </div>
+
     </main>
     <footer>
         <p>&copy;<span id="copy-date"></span> Andrew LaPointe Virginia (insert flag here)</p>

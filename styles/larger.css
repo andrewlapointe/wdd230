@@ -1,0 +1,25 @@
+@media (min-width: 640px) {
+	nav ul {
+		display: flex;
+	}
+	nav ul li {
+		flex: 1 1 100%;
+	}
+    main div.sections {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+    main div section {
+        flex: 1 1 100%;
+        /* flex-wrap: nowrap; */
+    }
+    section.card h3  {
+        min-width: 100%;
+        text-align: center;
+    }
+    section.card#information {
+        text-align: center;
+    }
+}
