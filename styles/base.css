@@ -41,6 +41,52 @@ nav {
     color: white;
     text-align: center; 
 }
+#menu {
+	font-size: 1.5rem;
+	border: 1px solid rgba(0,0,0,.3);
+	padding: 3px 7px 6px;
+	background-color: #eee;
+	color: #000;
+ 	position: absolute;
+	top: 2%;
+	right: 15%;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❎";
+}
+
+.navigation li {
+    display: none;
+}
+/* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
+.open li {
+	display: block;
+	width: 100%;
+}
+.open li a {
+	display: block;
+}
+
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	background-color: #333;
+	color: #fff;
+}
+.navigation li a {
+	display: block;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
 li.nav-element {
     padding-top: 8px;
     padding-bottom: 8px;
@@ -57,10 +103,11 @@ nav ul li a {
     color: white;
     font-size: 1.6em;    
 }
-nav a:hover {
+nav ul li:hover {
     text-decoration: none;
     color: var(--blue-gray);
-    
+
+    background-color: #031926;
 }
 main {
     margin-left: 5%;
@@ -97,22 +144,30 @@ section.card h3  {
     margin-left: auto;
 }
 section.card#information {
-    text-align: center;
+    align-self: center;
+    margin: auto;
 }
+#map-container {
+    display: flex;
+    margin-top: 30px;
+    /* align-content: center; */
+}
+#home-map-embed {
+    margin: auto;
+    width: 100%;
+}
+
 footer {
-    background-color: var(--main-blue);
-    padding-top: 10px;
-    padding-bottom: 10px;
+    text-align: center;
+    margin-top: 8px;
     margin-bottom: 0;
+    padding: 12px;
+    background-color: var(--main-blue);
     color: white;
-    position:fixed;
-    width:80%;
-    bottom:0px;
 }
 footer p {
     text-align: center;
     margin-bottom: 0;
-
 }
 
 
@@ -121,3 +176,20 @@ footer p {
 .line-break {
     width: 100%;
   }
+
+
+@media (min-width: 37.5em) {
+	#menu {
+		display: none; /* hide hamburger button */
+	}
+
+	.navigation {
+		flex-direction: row;
+	}
+
+	.navigation li {
+		display: block;
+		flex: 1 1 100%;
+	}
+	
+}
