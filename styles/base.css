@@ -6,7 +6,6 @@
 
 
 }
-/* @import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap'); */
 
 body {
     margin-top: 0;
@@ -16,7 +15,6 @@ body {
     background-color: var(--cream);
     color: var(--rich-black);
     font-family: 'Franklin Gothic  Medium', 'Arial Narrow', Arial, sans-serif;
-    /* font-family: 'East Sea Dokdo', cursive; */
 }
 header { 
     background-color: var(--main-blue);

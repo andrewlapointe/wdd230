@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Space for Meta tags and other info -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site plan for the falls church chamber of commerce project">
+    <meta name="author" content="Andrew LaPointe">
+    <meta property="og:url" content="https://andrewlapointe.github.io/wdd230/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title"
+        content="Andrew LaPointe - WDD 230 - Web Frontend Development - Chamber of Commerce site plan" />
+    <meta property="og:description" content="Mock Chamber of Commerce project site plan and styles" />
+    <!-- add a photo here for social media posts -->
+    <!-- <meta property="og:image" content="images/profile-min-optimized.jpg" /> -->
+    <link rel="icon" href="favicon.ico">
+    <title>Falls Church Chamber of Commerce Site Plan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="styles/chamber-site-plan.css">
+
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=East+Sea+Dokdo"> -->
+
+    <script src="../scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Site Plan</h1>
+    </header>
+    <nav>
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li class="nav-element"><a href="../index.html">Home</a></li>
+            <li class="nav-element"><a href="#">Site Plan</a></li>
+            <li class="nav-element"><a href="chamber/">Chamber</a></li>
+            <li class="nav-element"><a href="https://www.byui.edu">BYU-Idaho</a></li>
+            <li class="nav-element"><a
+                    href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/2?lang=eng">Scripture</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Falls Church Chamber of Commerce</h2>
+        <section>
+            <h3>Site Purpose</h3>
+            <p>The purpose of the Falls Church Chamber of Commerce website is to serve as a central hub for local
+                businesses and community members, offering resources, networking opportunities, and up-to-date
+                information that fosters economic growth and strengthens the ties between businesses, residents, and
+                visitors in the Falls Church community.</p>
+        </section>
+        <!-- --main-blue: #335961; /*teal old: 468189*/ 
+        --rich-black: #031926; /*rich black*/
+        --blue-gray: #9DBEBB; /*ash gray*/
+        --cream: #F4E9CD; /*parchment*/ -->
+        <section>
+            <h3>Color Schema</h3>
+            <div id="color-grid">
+                <div>
+                    <h4>color 1</h4>
+                    <div id="swatch-1" class="color-swatch"></div>
+                    <p>Teal Old</p>
+                </div>
+                <div>
+                    <h4>color 2</h4>
+                    <div id="swatch-2" class="color-swatch"></div>
+                    <p>Rich Black</p>
+                </div>
+                <div>
+                    <h4>color 3</h4>
+                    <div id="swatch-3" class="color-swatch"></div>
+                    <p>Ash Grey</p>
+
+                </div>
+                <div>
+                    <h4>color 4</h4>
+                    <div id="swatch-4" class="color-swatch"></div>
+                    <p>Parchment</p>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- font-family: 'Franklin Gothic  Medium', 'Arial Narrow', Arial, sans-serif; -->
+
+        <section>
+            <h3>Typography</h3>
+            <div id="topography-grid">
+                <div id="font-1">
+                    <h4>Main Font</h4>
+                    <ul>Franklin Gothic Medium</ul>
+                </div>
+                <div id="font-2">
+                    <h4>Secondary Font</h4>
+                    <ul>Arial Narrow</ul>
+                </div>
+                <div id="font-3">
+                    <h4>Tertiary Font</h4>
+                    <ul>Arial</ul>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h3>Wire Frames</h3>
+            <h4>Home - Desktop View</h4>
+            <img style="max-width: 400px;" src="images/home-large-view-wireframe.png"
+                alt="desktop wireframe of homepage">
+            <h4>Home - Mobile View</h4>
+            <img src="images/home-movile-view-wireframe.png" alt="mobile wireframe of homepage">
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="copy-date"></span> Andrew LaPointe Virginia (insert flag here)</p>
+        <p>Last Modified: <span id="last-modified-date"></span></p>
+    </footer>
+</body>
+
+</html>
