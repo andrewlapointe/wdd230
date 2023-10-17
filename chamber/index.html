@@ -22,11 +22,17 @@
 
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/menu.js" defer></script>
+    <script src="scripts/dark-mode.js   " defer></script>
 </head>
 
 <body>
     <header>
         <nav>
+            <div>
+                <h1>Falls Church</h1>
+                <h2>Chamber of Commerce</h2>
+
+            </div>
             <button id="menu"></button>
             <ul class="navigation">
                 <li><a href="#" title="Home">Home</a></li>
@@ -35,19 +41,63 @@
                 <li><a href="#" title="Join">Products</a></li>
             </ul>
         </nav>
-        <img id="hero-image"
-            src="data:image/jpeg;base64,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"
-            alt="hero image">
-        <button id="call-to-action">Call to Action</button>
     </header>
-    <section>Current Events</section>
-    <section>
-        Weather
+    <section id="hero">
+        <img id="hero-image" src="images/hero-image-optimized.png" alt="hero image">
+        <button id="call-to-action">Join Now!</button>
     </section>
-    <section>Spotlight</section>
+    <main>
+        <section id="events-section">
+            <h3>Events</h3>
+            <div>
+                <h4>Super Cool Event Name</h4>
+                <p>Description about that super cool event</p>
+            </div>
+        </section>
+        <section id="weather-section">
+            <h3>Weather</h3>
+            <div>
+                <h4>Super Cool Weather</h4>
+                <p>Dang. Thats some fine weather out there.</p>
+            </div>
+        </section>
+        <section id="member-section">
+            <h3>Member Spotlight</h3>
+            <div>
+                <h4>Aria Thompson - Desert Blossom, Antiques</h4>
+                <p>"Why fit in when you were born to stand out? At least that's what I tell my cacti every morning."</p>
+            </div>
+            <div>
+                <h4>Liam Rodriguez - Morning Brew Haven, Coffee Shop</h4>
+                <p>"Coffee first, business second. And if it's Monday, maybe coffee third and fourth too."</p>
+            </div>
+            <div>
+                <h4>Nina Patel - ChocoCraft, Chocolates and Confections</h4>
+                <p>"Success is 1% inspiration, 98% perspiration, and 100% chocolate indulgence."</p>
+            </div>
+            <div>
+                <h4>Ethan Kim - Echo Studios, Music Recording</h4>
+                <p>"If you think big, don't forget to soundproof your office. Dreams are loud!"</p>
+            </div>
+            <div>
+                <h4>Sophie Martinez - Doughnut Drive, Gourmet Doughnuts</h4>
+                <p>"Every challenge is just a detour on the road to donuts. I mean, success. Definitely meant success."
+                </p>
+            </div>
+        </section>
+
+    </main>
     <footer>
-        <p>&copy;<span id="copy-date"></span> | Andrew LaPointe Virginia</p>
-        <p>Last Modified: <span id="last-modified-date"></span></p>
+        <div id="footer-grid">
+            <div>
+                <img id="little-city-logo-footer" src="images/little-city-logo.jpeg" alt="little city logo">
+            </div>
+            <div id="footer-text-1">
+                <p>&copy;<span id="copy-date"></span> | Andrew LaPointe Virginia</p>
+                <p>Last Modified: <span id="last-modified-date"></span></p>
+                <p>ChamberEmail@chamberoc.gov</p>
+            </div>
+        </div>
     </footer>
 
 </body>
