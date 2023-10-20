@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,200&display=swap');
+
 header {
     display: block;
 }
@@ -43,10 +45,10 @@ div.color-swatch > p {
     text-align: center;
 }
 #font-1 ul {
-    font-family: 'Franklin Gothic Medium';
+    font-family: 'Poppins Light';
 }
 #font-2 ul {
-    font-family: 'Arial Narrow';
+    font-family: 'Poppins';
 }
 #font-3 ul {
     font-family: 'Arial';

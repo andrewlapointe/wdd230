@@ -8,7 +8,7 @@
     <meta name="description" content="Andrew LaPointe's WDD 230 - Web Frontend Development course assignment portal.">
     <meta name="author" content="Andrew LaPointe">
     <meta property="og:url" content="https://andrewlapointe.github.io/wdd230/" />
-    <meta property="og:type" content="article" />
+    <meta property="og:type" content="website" />
     <meta property="og:title" content="Andrew LaPointe - WDD 230 - Web Frontend Development" />
     <meta property="og:description"
         content="Andrew LaPointe's WDD 230 - Web Frontend Development course assignment portal." />
@@ -34,13 +34,25 @@
         <button id="menu"></button>
         <ul class="navigation">
             <li class="nav-element"><a href="#">Home</a></li>
-            <li class="nav-element"><a href="lesson3/chamber-site-plan.html">Site Plan</a></li>
+            <li class="nav-element"><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
             <li class="nav-element"><a href="chamber/">Chamber</a></li>
             <li class="nav-element"><a href="https://www.byui.edu">BYU-Idaho</a></li>
             <li class="nav-element"><a
                     href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/2?lang=eng">Scripture</a></li>
         </ul>
     </nav>
+    <section id="hero">
+        <picture>
+            <!-- For viewports larger than 400px and up to 960px -->
+            <source srcset="images/dc-temple-big-cropped.webp" media="(min-width: 400px)">
+            <!-- For mobile view (up to 400px) -->
+            <img src="images/dc-temple-optimized-mobile.webp" alt="A beautiful temple">
+
+        </picture>
+        <div class="herolabel">
+            <p>DC Temple</p>
+        </div>
+    </section>
     <main>
         <h2>WDD 230: Web Frontend Development</h2>
         <div class="sections">

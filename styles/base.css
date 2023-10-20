@@ -8,9 +8,10 @@
 }
 
 body {
+    width: 100%;
     margin-top: 0;
-    margin-right: 10%;
-    margin-left: 10%;
+    margin-right: 0;
+    margin-left: 0;
     margin-bottom: 0;
     background-color: var(--cream);
     color: var(--rich-black);
@@ -92,6 +93,7 @@ li.nav-element {
 nav ul {
     display: block;
     margin-top: 0;
+    margin-bottom: 0;
     list-style: none;
     padding-inline-start: 0px;
 
@@ -107,6 +109,43 @@ nav ul li:hover {
 
     background-color: #031926;
 }
+section#hero {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+section#hero picture {
+    background-color: #D4EEFB;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+section#hero picture img {
+    width: 100%;
+    height: auto;
+}
+.herolabel {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	background: radial-gradient(#fff, #DBEEFC);
+	border: 1px solid rgba(0,0,0,.75);
+	padding: 1.5rem;
+	box-shadow: 0 0 3rem #fff;
+	opacity: 0.75;
+	/* Buenas */
+}
+
+.herolabel p {
+	margin: 0;
+	padding: .125rem;
+	font-weight: 700;
+	font-size: 1.2rem;
+	font-family:"Great Vibes", serif;
+}
+
+
+
 main {
     margin-left: 5%;
     margin-right: 5%;
