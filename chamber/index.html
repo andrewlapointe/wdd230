@@ -15,6 +15,8 @@
     <link rel="icon" href="favicon.ico">
     <title>Chamber of Commerce - Andrew LaPointe - WDD 230 - Web Frontend Development</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
 
@@ -22,7 +24,8 @@
 
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/menu.js" defer></script>
-    <script src="scripts/dark-mode.js   " defer></script>
+    <script src="scripts/dark-mode.js" defer></script>
+    <script src="scripts/windchill.js" defer></script>
 </head>
 
 <body>
@@ -42,9 +45,21 @@
             </ul>
         </nav>
     </header>
-    <section id="hero">
+    <!-- <section id="hero">
         <img id="hero-image" src="images/hero-image-optimized.png" alt="hero image">
         <button id="call-to-action">Join Now!</button>
+    </section> -->
+    <section id="hero">
+        <picture>
+            <source srcset="images/big-hero-large-view.webp" media="(min-width: 768px)">
+            <!-- For viewports larger than 400px and up to 960px -->
+            <source srcset="images/big-hero-medium-view.webp" media="(min-width: 400px)">
+            <!-- For mobile view (up to 400px) -->
+            <img id="hero-image" src="images/big-hero-small-view.webp" alt="hero image">
+
+        </picture>
+
+        <button id="call-to-action" name="member join">Join Now!</button>
     </section>
     <main>
         <section id="events-section">
@@ -57,8 +72,23 @@
         <section id="weather-section">
             <h3>Weather</h3>
             <div>
-                <h4>Super Cool Weather</h4>
-                <p>Dang. Thats some fine weather out there.</p>
+                <p>
+                    <span id="main-weather-icon" class="material-symbols-outlined"></span>
+                    Today's Weather:
+                    <span id="weather-type-text"></span>
+                </p>
+                <p id="weather-temp">
+                    <span class="material-symbols-outlined">
+                        thermostat
+                    </span>
+                    Actual Temperature:
+                    <span id="weather-temp-text"></span>°F
+                </p>
+                <p id="windchill">
+                    <span id="wind-icon" class="material-symbols-outlined"></span>
+                    Windchill:
+                    <span id="calculated-chill"></span>°F
+                </p>
             </div>
         </section>
         <section id="member-section">
