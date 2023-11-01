@@ -1,0 +1,39 @@
+table {
+    border-collapse: collapse;
+    text-align: center;
+}
+
+thead {
+    background-color: black;
+    color: white;
+    font-size: 1.2rem;  
+    border-left: 1px black solid;
+}
+thead tr td {
+    border-bottom: 1px black solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+th {
+    background-color: darkgrey;
+    padding: 0.5rem;
+
+}
+th.empty {
+    background-color: black;
+    /* border-left: 1px black solid; */
+}
+
+td {
+    padding: 0.5rem;
+    border: 1px grey solid;
+}
+caption{
+    font-size: 0.8rem;
+    caption-side: bottom;
+    padding-top: .2rem;
+}
+tr:nth-child(even){
+    background-color: lightgray;
+}

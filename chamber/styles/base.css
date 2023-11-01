@@ -146,6 +146,59 @@ main section div p {
 	content: "📍 ";
 }
 
+/* DISCOVER PAGE LAYOUT */
+/*  */
+/*  */
+main.discover {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+}
+main.discover section.discover#top-left {
+	grid-column: 1/2;
+	grid-row: 1/2;
+}
+main.discover section.discover#mid-left {
+	grid-column: 1/2;
+	grid-row: 3/3;
+}
+main.discover section.discover#bottom-left {
+	grid-column: 1/2;
+	grid-row: 3/4;
+}
+main.discover section.discover#right {
+	grid-column: 2/3;
+	grid-row: 1/4;
+}
+main.discover section img {
+	max-width: 100%;
+	max-height: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+section.discover#right {
+	display: flex; /* Establishes this container as a flex container */
+	justify-content: center; /* Centers content horizontally */
+	align-items: center; /* Centers content vertically */
+}
+  
+div.discover-image-vert-container {
+	display: flex; /* Establishes this container as a flex container */
+	flex-direction: column; /* Aligns children vertically */
+	justify-content: space-around; /* Centers children vertically */
+	height: 100%; /* You need to give a height to the container to center content vertically */
+	margin-top: 0px;
+}
+  
+  /* Optional: if you want each image to be centered within its own div */
+.discover-image-vert-container > div {
+	margin-top: 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%; /* Each image container should have a height if you want individual vertical centering */
+}
+/*  */
+/*  */
 footer {
     text-align: center;
     margin-top: 8px;
