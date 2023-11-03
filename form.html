@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Space for Meta tags and other info -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Andrew LaPointe's WDD 230 - Web Frontend Development course assignment portal.">
+    <meta name="author" content="Andrew LaPointe">
+    <meta property="og:url" content="https://andrewlapointe.github.io/wdd230/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Andrew LaPointe - WDD 230 - Web Frontend Development" />
+    <meta property="og:description"
+        content="Andrew LaPointe's WDD 230 - Web Frontend Development course assignment portal." />
+    <meta property="og:image" content="images/profile-min-optimized.webp" />
+    <link rel="icon" href="favicon.ico">
+    <title>Andrew LaPointe - WDD 230 - Web Frontend Development</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
+
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=East+Sea+Dokdo"> -->
+
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/visitcount.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+
+
+</head>
+
+<body>
+    <header>
+        <img src="images/profile-min-optimized.jpg" alt="site creator wearing a hoodie">
+        <h1>Andrew LaPointe</h1>
+    </header>
+    <nav>
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li class="nav-element"><a href="#">Home</a></li>
+            <li class="nav-element"><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
+            <li class="nav-element"><a href="chamber/">Chamber</a></li>
+            <li class="nav-element"><a href="https://www.byui.edu">BYU-Idaho</a></li>
+            <li class="nav-element"><a
+                    href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/2?lang=eng">Scripture</a></li>
+        </ul>
+    </nav>
+    <main id="form-main">
+        <form action="">
+            <fieldset>
+                <p><span id="message"></span></p>
+                <label>Username: <input id="username" name="username" type="text" required></label>
+                <label>Password: <input id="password" name="password" type="password" required
+                        pattern="[\w{8,}]"></label>
+                <label>Confirm Password: <input id="confirm-password" name="confirm-password" type="password"
+                        required></label>
+                <label>Email: <input id="email" name="email" type="email" required pattern="[\w\.]+@byui\.edu$"
+                        title="Please enter a valid email address"></label>
+                <label>Page Rating: <span id="currentrating"></span><input id="rating" name="rating" type="range"
+                        min="1" max="10" step="1" list="slidervalues"></label>
+                <datalist id="slidervalues">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist>
+                <button>Sign Up</button>
+
+        </form>
+        </fieldset>
+    </main>
+    <footer>
+        <p>&copy;<span id="copy-date"></span> Andrew LaPointe Virginia (insert flag here)</p>
+        <p>Last Modified: <span id="last-modified-date"></span></p>
+    </footer>
+
+</body>
+
+</html>
