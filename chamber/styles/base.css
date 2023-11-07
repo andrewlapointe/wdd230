@@ -150,31 +150,28 @@ main section div p {
 /*  */
 /*  */
 main.discover {
-	display: grid;
-	grid-template-columns: 1fr 2fr;
+	display: block;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
-main.discover section.discover#top-left {
-	grid-column: 1/2;
-	grid-row: 1/2;
+
+main.discover section p {
+	padding: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
 }
-main.discover section.discover#mid-left {
-	grid-column: 1/2;
-	grid-row: 3/3;
+
+main.discover section div div img {
+	width: 300px;
+	padding: 10px;
 }
-main.discover section.discover#bottom-left {
-	grid-column: 1/2;
-	grid-row: 3/4;
+main.discover section div div img:first-of-type {
+	padding: 20px;
 }
-main.discover section.discover#right {
-	grid-column: 2/3;
-	grid-row: 1/4;
+main.discover section div div img:last-of-type {
+	padding: 20px;
 }
-main.discover section img {
-	max-width: 100%;
-	max-height: auto;
-	margin-top: auto;
-	margin-bottom: auto;
-}
+
 section.discover#right {
 	display: flex; /* Establishes this container as a flex container */
 	justify-content: center; /* Centers content horizontally */
