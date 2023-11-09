@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Andrew LaPointe's WDD 230 - Web Frontend Development course assignment portal.">
+    <meta name="author" content="Andrew LaPointe">
+    <meta property="og:url" content="https://andrewlapointe.github.io/wdd230/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Andrew LaPointe - WDD 230 - Web Frontend Development" />
+    <meta property="og:description"
+        content="Andrew LaPointe's WDD 230 - Web Frontend Development course assignment portal." />
+    <meta property="og:image" content="images/little-city-logo.webp" />
+    <link rel="icon" href="favicon.ico">
+    <title>Chamber of Commerce - Andrew LaPointe - WDD 230 - Web Frontend Development</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=East+Sea+Dokdo"> -->
+
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/dark-mode.js" defer></script>
+    <script src="scripts/windchill.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div>
+                <h1>Falls Church<br>Chamber of Commerce</h1>
+
+            </div>
+            <button id="menu"></button>
+            <ul class="navigation">
+                <li><a href="#" title="Home">Home</a></li>
+                <li><a href="./discover.html" title="Discover">Discover</a></li>
+                <li><a href="#" title="Directory">Directory</a></li>
+                <li><a href="#" title="Join">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="form-main">
+        <fieldset>
+            <form action="">
+                <p><span id="message"></span></p>
+
+                <label>First Name: <input id="firstname" name="firstname" type="text" required></label>
+                <br>
+                <label>Last Name: <input id="lastname" name="lastname" type="text" required></label>
+                <br>
+                <label>Title/Position:
+                    <input id="title" name="title" type="text" required pattern="[A-Za-z\- ]{7,}"
+                        title="Title must be at least 7 characters and only contain alpha characters, hyphens, and spaces">
+                </label>
+                <br>
+                <label>Email:
+                    <input id="email" name="email" type="email" required placeholder="example@domain.com">
+                </label>
+                <br>
+                <label>Mobile Phone:
+                    <input id="mobile" name="mobile" type="tel" required>
+                </label>
+                <br>
+                <label>Organization Name:
+                    <input id="orgname" name="orgname" type="text" required>
+                </label>
+                <br>
+                <label>Membership Level:
+                    <select id="membership" name="membership" required>
+                        <option value="np">NP Membership - No Fee</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+                <br>
+                <label>Organization Description:
+                    <textarea id="orgdescription" name="orgdescription" required></textarea>
+                </label>
+                <br>
+                <input id="timestamp" name="timestamp" type="hidden" value="">
+
+                <button type="submit">Submit Application</button>
+            </form>
+        </fieldset>
+
+    </main>
+    <footer>
+        <div id="footer-grid">
+            <div>
+                <img id="little-city-logo-footer" src="images/little-city-logo.jpeg" alt="little city logo">
+            </div>
+            <div id="footer-text-1">
+                <p>&copy;<span id="copy-date"></span> | Andrew LaPointe Virginia</p>
+                <p>Last Modified: <span id="last-modified-date"></span></p>
+                <p>ChamberEmail@chamberoc.gov</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

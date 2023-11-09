@@ -220,3 +220,27 @@ footer div#footer-grid div#footer-text-1 {
 	margin-top: auto;
 	margin-bottom: auto;
 }
+
+main#form-main {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
+	padding: 5px;
+}
+main#form-main fieldset {
+	max-width: 250px;
+}
+main#form-main fieldset form {
+	text-align: center;
+}
+main#form-main fieldset form * {
+	padding: 5px;
+}
+main#form-main fieldset form label {
+	margin-top: 10px;
+}
+
+main#form-main fieldset br {
+	height: 20px;
+}
