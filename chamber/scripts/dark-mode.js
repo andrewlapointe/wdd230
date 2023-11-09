@@ -25,5 +25,5 @@ function toggleDarkMode() {
 }
 
 // Add event listener to the button with id "call-to-action"
-document.getElementById("call-to-action").addEventListener("click", toggleDarkMode);
+document.getElementById("dark-mode").addEventListener("click", toggleDarkMode);
 
