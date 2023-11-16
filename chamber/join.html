@@ -49,49 +49,105 @@
     </header>
 
     <main id="form-main">
-        <fieldset>
-            <form action="record.html" method="get">
-                <p><span id="message"></span></p>
+        <div>
+            <section>
 
-                <label>First Name: <input id="firstname" name="firstname" type="text" required></label>
-                <br>
-                <label>Last Name: <input id="lastname" name="lastname" type="text" required></label>
-                <br>
-                <label>Title/Position:
-                    <input id="title" name="title" type="text" required pattern="[A-Za-z\- ]{7,}"
-                        title="Title must be at least 7 characters and only contain alpha characters, hyphens, and spaces">
-                </label>
-                <br>
-                <label>Email:
-                    <input id="email" name="email" type="email" required placeholder="example@domain.com">
-                </label>
-                <br>
-                <label>Mobile Phone:
-                    <input id="mobile" name="mobile" type="tel" required>
-                </label>
-                <br>
-                <label>Organization Name:
-                    <input id="orgname" name="orgname" type="text" required>
-                </label>
-                <br>
-                <label>Membership Level:
-                    <select id="membership" name="membership" size="4" required>
-                        <option value="np">NP Membership - No Fee</option>
-                        <option value="bronze">Bronze Membership</option>
-                        <option value="silver">Silver Membership</option>
-                        <option value="gold">Gold Membership</option>
-                    </select>
-                </label>
-                <br>
-                <label>Organization Description:
-                    <textarea id="orgdescription" name="orgdescription" required></textarea>
-                </label>
-                <br>
-                <input id="timestamp" name="timestamp" type="hidden" value="">
+                <fieldset>
+                    <form action="record.html" method="get">
+                        <p><span id="message"></span></p>
 
-                <button type="submit">Submit Application</button>
-            </form>
-        </fieldset>
+                        <label>
+                            <p>First Name:</p> <input id="firstname" name="firstname" type="text" required>
+                        </label>
+                        <br>
+                        <label>
+                            <p>Last Name:</p> <input id="lastname" name="lastname" type="text" required>
+                        </label>
+                        <br>
+                        <label>
+                            <p>Title/Position:</p>
+                            <input id="title" name="title" type="text" required pattern="[A-Za-z\- ]{7,}"
+                                title="Title must be at least 7 characters and only contain alpha characters, hyphens, and spaces">
+                        </label>
+                        <br>
+                        <label>
+                            <p>Email:</p>
+                            <input id="email" name="email" type="email" required placeholder="example@domain.com">
+                        </label>
+                        <br>
+                        <label>
+                            <p>Mobile Phone:</p>
+                            <input id="mobile" name="mobile" type="tel" required>
+                        </label>
+                        <br>
+                        <label>
+                            <p>Organization Name:</p>
+                            <input id="orgname" name="orgname" type="text" required>
+                        </label>
+                        <br>
+                        <label>
+                            <p>Membership Level:</p>
+                            <select id="membership" name="membership" required>
+                                <option value="np">NP Membership - No Fee</option>
+                                <option value="bronze">Bronze Membership</option>
+                                <option value="silver">Silver Membership</option>
+                                <option value="gold">Gold Membership</option>
+                            </select>
+                        </label>
+                        <br>
+                        <label>
+                            <p>Organization Description:</p>
+                            <textarea id="orgdescription" name="orgdescription" required></textarea>
+                        </label>
+                        <br>
+                        <input id="timestamp" name="timestamp" type="hidden" value="">
+
+                        <button type="submit">Submit Application</button>
+                    </form>
+                </fieldset>
+            </section>
+
+        </div>
+        <div id="benefits">
+            <section>
+                <h3>Which Tier is Right For Me?</h3>
+
+                <h4>Non-Profit Tier</h4>
+                <ul>
+                    <li>Networking Opportunities: Access to basic networking events and online forums.</li>
+                    <li>Information Resources: Monthly newsletter and access to basic online resources.</li>
+                    <li>Event Discounts: Discounts on select Chamber events.</li>
+                    <li>Promotional Opportunities: Listing in the Chamber's online directory.</li>
+                </ul>
+
+                <h4>Bronze Tier</h4>
+                <ul>
+                    <li>All Non-Profit Tier Benefits</li>
+                    <li>Enhanced Networking Opportunities: Access to additional, exclusive networking events.</li>
+                    <li>Advertising Discounts: Discounts on advertising in Chamber publications.</li>
+                    <li>Event Hosting: Opportunity to host a Chamber event once a year.</li>
+                    <li>Business Support: Basic business counseling and support services.</li>
+                </ul>
+
+                <h4>Silver Tier</h4>
+                <ul>
+                    <li>All Bronze Tier Benefits</li>
+                    <li>Increased Visibility: Featured business profile on Chamber's website and newsletters.</li>
+                    <li>Advanced Business Support: Access to advanced business workshops and webinars.</li>
+                    <li>Sponsorship Opportunities: Eligibility to sponsor Chamber events.</li>
+                    <li>Community Leadership Opportunities: Participation in Chamber committees.</li>
+                </ul>
+
+                <h4>Gold Tier</h4>
+                <ul>
+                    <li>All Silver Tier Benefits</li>
+                    <li>Premier Networking Events: Invitations to high-profile networking events and roundtables.</li>
+                    <li>One-on-One Business Coaching: Personalized business coaching and mentoring.</li>
+                    <li>Leadership Recognition: Recognition as a leading member in Chamber publications and events.</li>
+                    <li>Customized Support: Tailored support services to meet specific business needs.</li>
+                </ul>
+            </section>
+        </div>
 
     </main>
     <footer>

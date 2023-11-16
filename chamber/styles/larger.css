@@ -128,4 +128,17 @@ div.discover-image-vert-container {
 }
 /*  */
 /*  */
+/* JOIN PAGE */
+#form-main {
+	flex-direction: row; /* Places the divs next to each other */
+	justify-content: space-between; /* Adds space between the divs */
+	flex-wrap: wrap; /* Allows divs to wrap onto the next line if needed */
+}
+#form-main > div {
+	flex: 1; /* Allows divs to grow and take up equal space */
+}
+main#form-main fieldset {
+	max-width: 100%;
+	background-color: var(--cream);
+}
 }

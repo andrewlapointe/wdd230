@@ -199,8 +199,41 @@ div.discover-image-vert-container {
 	align-items: center;
 	height: 100%; /* Each image container should have a height if you want individual vertical centering */
 }
-/*  */
-/*  */
+/*
+*/
+
+/* Join Page Layout */
+/*  
+*/
+#form-main {
+    display: flex;
+    flex-direction: column; /* Stacks the child divs vertically by default */
+}
+
+main#form-main {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	/* display: flex; */
+	padding: 5px;
+}
+main#form-main fieldset {
+	max-width: 250px;
+	background-color: var(--cream);
+}
+main#form-main fieldset form {
+	text-align: center;
+}
+main#form-main fieldset form p {
+	text-align: center;
+}
+main#form-main fieldset form * {
+	padding: 1px;
+}
+
+
+/* 
+*/
+/* END JOIN PAGE */
 footer {
     text-align: center;
     margin-top: 8px;
@@ -224,28 +257,4 @@ footer {
 footer div#footer-grid div#footer-text-1 {
 	margin-top: auto;
 	margin-bottom: auto;
-}
-
-main#form-main {
-	margin-top: 20px;
-	margin-bottom: 20px;
-	display: flex;
-	justify-content: center;
-	padding: 5px;
-}
-main#form-main fieldset {
-	max-width: 250px;
-}
-main#form-main fieldset form {
-	text-align: center;
-}
-main#form-main fieldset form * {
-	padding: 5px;
-}
-main#form-main fieldset form label {
-	margin-top: 10px;
-}
-
-main#form-main fieldset br {
-	height: 20px;
 }
