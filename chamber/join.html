@@ -10,10 +10,10 @@
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Andrew LaPointe - WDD 230 - Web Frontend Development" />
     <meta property="og:description"
-        content="Andrew LaPointe's WDD 230 - Web Frontend Development course assignment portal." />
+        content="Member Join page for Falls Church Chamber of Commerce - Andrew LaPointe's WDD 230" />
     <meta property="og:image" content="images/little-city-logo.webp" />
     <link rel="icon" href="favicon.ico">
-    <title>Chamber of Commerce - Andrew LaPointe - WDD 230 - Web Frontend Development</title>
+    <title>Chamber of Commerce Join Page - Andrew LaPointe - WDD 230 - Web Frontend Development</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -56,37 +56,45 @@
                     <form action="record.html" method="get">
                         <p><span id="message"></span></p>
 
+                        <p>First Name:</p>
                         <label>
-                            <p>First Name:</p> <input id="firstname" name="firstname" type="text" required>
+                            <input id="firstname" name="firstname" type="text" required>
                         </label>
                         <br>
+
+                        <p>Last Name:</p>
                         <label>
-                            <p>Last Name:</p> <input id="lastname" name="lastname" type="text" required>
+                            <input id="lastname" name="lastname" type="text" required>
                         </label>
                         <br>
+
+                        <p>Title/Position:</p>
                         <label>
-                            <p>Title/Position:</p>
                             <input id="title" name="title" type="text" required pattern="[A-Za-z\- ]{7,}"
                                 title="Title must be at least 7 characters and only contain alpha characters, hyphens, and spaces">
                         </label>
                         <br>
+
+                        <p>Email:</p>
                         <label>
-                            <p>Email:</p>
                             <input id="email" name="email" type="email" required placeholder="example@domain.com">
                         </label>
                         <br>
+
+                        <p>Mobile Phone:</p>
                         <label>
-                            <p>Mobile Phone:</p>
                             <input id="mobile" name="mobile" type="tel" required>
                         </label>
                         <br>
+
+                        <p>Organization Name:</p>
                         <label>
-                            <p>Organization Name:</p>
                             <input id="orgname" name="orgname" type="text" required>
                         </label>
                         <br>
+
+                        <p>Membership Level:</p>
                         <label>
-                            <p>Membership Level:</p>
                             <select id="membership" name="membership" required>
                                 <option value="np">NP Membership - No Fee</option>
                                 <option value="bronze">Bronze Membership</option>
@@ -95,13 +103,14 @@
                             </select>
                         </label>
                         <br>
+
+                        <p>Organization Description:</p>
                         <label>
-                            <p>Organization Description:</p>
                             <textarea id="orgdescription" name="orgdescription" required></textarea>
                         </label>
                         <br>
-                        <input id="timestamp" name="timestamp" type="hidden" value="">
 
+                        <input id="timestamp" name="timestamp" type="hidden" value="">
                         <button type="submit">Submit Application</button>
                     </form>
                 </fieldset>

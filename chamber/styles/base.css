@@ -223,9 +223,7 @@ main#form-main fieldset {
 main#form-main fieldset form {
 	text-align: center;
 }
-main#form-main fieldset form p {
-	text-align: center;
-}
+
 main#form-main fieldset form * {
 	padding: 1px;
 }
