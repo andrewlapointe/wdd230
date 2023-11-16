@@ -1,0 +1,65 @@
+/* General styles */
+body, h1, h2, p, header, footer, main, section {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #4a76a8; /* Blue background for the header */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Styles for the main content area */
+main div {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Styles for each card */
+section {
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+}
+
+h2 {
+    background-color: #4a76a8;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+    line-height: 1.4;
+}
+
+footer {
+    background-color: #4a76a8;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Mobile view: single column */
+@media screen and (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+}
+    

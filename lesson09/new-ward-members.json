@@ -1,4 +1,51 @@
+[
 {
-    "name":"LaPointe",
+    "familyName": "Doe",
+    "moveInDate": "2023-01-15",
+    "numberOfPeople": 4,
+    "visitedByBishopric": true,
+    "familyMembers": [
+        {
+            "name": "John Doe",
+            "gender": "Male",
+            "birthdate": "1980-04-22"
+        },
+        {
+            "name": "Jane Doe",
+            "gender": "Female",
+            "birthdate": "1982-08-30"
+        },
+        {
+            "name": "Jim Doe",
+            "gender": "Male",
+            "birthdate": "2010-07-12"
+        },
+        {
+            "name": "Jill Doe",
+            "gender": "Female",
+            "birthdate": "2012-03-19"
+        }
+    ]
+    
+},
+{
+    "familyName": "LaPointe",
+    "moveInDate": "2021-01-8",
+    "numberOfPeople": 2,
+    "visitedByBishopric": false,
+    "familyMembers": [
+        {
+            "name": "Andrew LaPointe",
+            "gender": "Male",
+            "birthdate": "2002-02-12"
+        },
+        {
+            "name": "Josh LaPointe",
+            "gender": "Male",
+            "birthdate": "2006-12-16"
+        }
+
+    ]
     
 }
+]
