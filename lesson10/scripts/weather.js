@@ -20,7 +20,7 @@ async function apiFetch() {
 }
   
 function displayResults(data) {
-    currentTemp.innerHTML = `${data.main.temp}&deg;F`;
+    currentTemp.innerHTML = `${Math.round(data.main.temp)}&deg;F`;
 
     // Since 'weather' is an array, you need to access its first element
     const weatherData = data.weather[0];
