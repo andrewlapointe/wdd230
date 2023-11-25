@@ -1,0 +1,61 @@
+{
+    "companies": [
+      {
+        "name": "BlueTech Innovations",
+        "address": "1234 Tech Lane, Falls Church, VA 22042",
+        "phone_number": "(703) 555-0123",
+        "website_url": "https://www.bluetechinnovations.com",
+        "image_file": "blue-tech-logo.png",
+        "membership_level": "Gold"
+      },
+      {
+        "name": "GreenLeaf Botanicals",
+        "address": "9876 Nature Ave, Falls Church, VA 22043",
+        "phone_number": "(703) 555-0456",
+        "website_url": "https://www.greenleafbotanicals.com",
+        "image_file": "green-leaf-logo.png",
+        "membership_level": "Silver"
+      },
+      {
+        "name": "Harbor Financial Services",
+        "address": "2211 Money St, Falls Church, VA 22044",
+        "phone_number": "(703) 555-0789",
+        "website_url": "https://www.harborfinancial.com",
+        "image_file": "harbor-logo.png",
+        "membership_level": "Bronze"
+      },
+      {
+        "name": "SunnySide Daycare",
+        "address": "3344 Childcare Blvd, Falls Church, VA 22045",
+        "phone_number": "(703) 555-0112",
+        "website_url": "https://www.sunnysidedaycare.com",
+        "image_file": "sunny-side-logo.png",
+        "membership_level": "NP"
+      },
+      {
+        "name": "Quantum Computing Corp",
+        "address": "5566 Future Rd, Falls Church, VA 22046",
+        "phone_number": "(703) 555-0234",
+        "website_url": "https://www.quantumcomputingcorp.com",
+        "image_file": "quantum-logo.png",
+        "membership_level": "Gold"
+      },
+      {
+        "name": "EcoFriendly Solutions",
+        "address": "1122 Green Way, Falls Church, VA 22047",
+        "phone_number": "(703) 555-0367",
+        "website_url": "https://www.ecofriendlysolutions.com",
+        "image_file": "eco-friendly-logo.png",
+        "membership_level": "Silver"
+      },
+      {
+        "name": "Astro Research Lab",
+        "address": "7788 Star Gaze Lane, Falls Church, VA 22048",
+        "phone_number": "(703) 555-0490",
+        "website_url": "https://www.astroresearchlab.com",
+        "image_file": "astro-logo.png",
+        "membership_level": "NP"
+      }
+    ]
+  }
+  

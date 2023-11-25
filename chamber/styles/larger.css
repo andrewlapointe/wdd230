@@ -73,72 +73,78 @@
 		grid-row: 2/3;
 	}
 	/* DISCOVER PAGE LAYOUT */
-/*  */
-/*  */
-main.discover {
-	display: grid;
-	grid-template-columns: 1fr 2fr;
-	margin-left: 30px;
-	margin-right: 30px;
+	/*  */
+	/*  */
+	main.discover {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		margin-left: 30px;
+		margin-right: 30px;
 
-}
-main.discover section.discover#top-left {
-	grid-column: 1/2;
-	grid-row: 1/2;
-}
-main.discover section.discover#mid-left {
-	grid-column: 1/2;
-	grid-row: 3/3;
-}
-main.discover section.discover#bottom-left {
-	grid-column: 1/2;
-	grid-row: 3/4;
-}
-main.discover section.discover#right {
-	grid-column: 2/3;
-	grid-row: 1/4;
-}
-main.discover section img {
-	max-width: 100%;
-	/* max-height: auto; */
-	margin-top: auto;
-	margin-bottom: auto;
-}
-section.discover#right {
-	display: flex; /* Establishes this container as a flex container */
-	justify-content: center; /* Centers content horizontally */
-	align-items: center; /* Centers content vertically */
-}
-  
-div.discover-image-vert-container {
-	display: flex; /* Establishes this container as a flex container */
-	flex-direction: column; /* Aligns children vertically */
-	justify-content: space-around; /* Centers children vertically */
-	height: 100%; /* You need to give a height to the container to center content vertically */
-	margin-top: 0px;
-}
-  
-  /* Optional: if you want each image to be centered within its own div */
-.discover-image-vert-container > div {
-	margin-top: 0px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100%; /* Each image container should have a height if you want individual vertical centering */
-}
-/*  */
-/*  */
-/* JOIN PAGE */
-#form-main {
-	flex-direction: row; /* Places the divs next to each other */
-	justify-content: space-between; /* Adds space between the divs */
-	flex-wrap: wrap; /* Allows divs to wrap onto the next line if needed */
-}
-#form-main > div {
-	flex: 1; /* Allows divs to grow and take up equal space */
-}
-main#form-main fieldset {
-	max-width: 100%;
-	background-color: var(--cream);
-}
+	}
+	main.discover section.discover#top-left {
+		grid-column: 1/2;
+		grid-row: 1/2;
+	}
+	main.discover section.discover#mid-left {
+		grid-column: 1/2;
+		grid-row: 3/3;
+	}
+	main.discover section.discover#bottom-left {
+		grid-column: 1/2;
+		grid-row: 3/4;
+	}
+	main.discover section.discover#right {
+		grid-column: 2/3;
+		grid-row: 1/4;
+	}
+	main.discover section img {
+		max-width: 100%;
+		/* max-height: auto; */
+		margin-top: auto;
+		margin-bottom: auto;
+	}
+	section.discover#right {
+		display: flex; /* Establishes this container as a flex container */
+		justify-content: center; /* Centers content horizontally */
+		align-items: center; /* Centers content vertically */
+	}
+	
+	div.discover-image-vert-container {
+		display: flex; /* Establishes this container as a flex container */
+		flex-direction: column; /* Aligns children vertically */
+		justify-content: space-around; /* Centers children vertically */
+		height: 100%; /* You need to give a height to the container to center content vertically */
+		margin-top: 0px;
+	}
+	
+	/* Optional: if you want each image to be centered within its own div */
+	.discover-image-vert-container > div {
+		margin-top: 0px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%; /* Each image container should have a height if you want individual vertical centering */
+	}
+	/*  */
+	/*  */
+	/* JOIN PAGE */
+	#form-main {
+		flex-direction: row; /* Places the divs next to each other */
+		justify-content: space-between; /* Adds space between the divs */
+		flex-wrap: wrap; /* Allows divs to wrap onto the next line if needed */
+	}
+	#form-main > div {
+		flex: 1; /* Allows divs to grow and take up equal space */
+	}
+	main#form-main fieldset {
+		max-width: 100%;
+		background-color: var(--cream);
+	}
+	/*  */
+	/* DIRECTORY PAGE */
+	main#main-directory div#directory-cards {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
 }

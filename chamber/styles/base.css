@@ -31,7 +31,7 @@ nav div {
 
 nav div h1 {
 	margin-top: 0;
-	margin-bottom: 0;
+	margin-bottom: 8px;
 	padding-top: 10px;
 	/* color: var(--white); */
 	
@@ -232,6 +232,54 @@ main#form-main fieldset form * {
 /* 
 */
 /* END JOIN PAGE */
+/* DIRECTORY PAGE */
+/*  */
+/*  */
+main#main-directory {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+}
+main#main-directory div#view-selectors {
+	text-align: center;
+	margin-top: 15px;
+	display: block;
+	width: 100%;
+}
+
+button#grid-view-button {
+	/* background-color: var(--blue-gray); */
+}
+.button-focus {
+	background-color: var(--blue-gray);
+}
+.button-unfocus {
+	background-color: #efefef;
+}
+
+/* #directory-cards {
+	margin-top: 15px;
+} */
+#directory-cards * {
+	padding: 5px;
+}
+#directory-cards section {
+	margin-top: 20px;
+}
+section#directory-list {
+	display: none;
+}
+.width-80pc {
+	max-width: 80%;
+}
+.block-center {
+	text-align: center;
+}
+/*  */
+/*  */
+/* END DIRECTORY PAGE */
 footer {
     text-align: center;
     margin-top: 8px;
