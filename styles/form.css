@@ -30,7 +30,7 @@ button {
     color: white;
     background-color: red;
     padding: .5rem;
-    margin: 1rem o;
+    margin: 1rem;
 }
 input:valid {
     box-shadow: 3px 3px 3px black;
