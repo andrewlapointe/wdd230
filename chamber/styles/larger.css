@@ -104,6 +104,9 @@
 		margin-top: auto;
 		margin-bottom: auto;
 	}
+	main.discover section div div img:hover {
+		box-shadow: 10px 10px 15px var(--blue-gray);
+	}
 	section.discover#right {
 		display: flex; /* Establishes this container as a flex container */
 		justify-content: center; /* Centers content horizontally */
