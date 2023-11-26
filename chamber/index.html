@@ -26,6 +26,10 @@
     <script src="scripts/menu.js" defer></script>
     <script src="scripts/dark-mode.js" defer></script>
     <script src="scripts/windchill.js" defer></script>
+    <script src="scripts/banner.js" defer></script>
+    <script src="scripts/forcast.js" defer></script>
+
+
 
 </head>
 
@@ -62,17 +66,61 @@
 
         <button onclick="window.location.href='join.html';" id="call-to-action" name="member join">Join Now!</button>
     </section>
+    <div id="weekly-banner">
+        <!-- Banner content -->
+        <p>Come to our weekly meet and greet. Wednesday at 7pm!</p>
+        <!-- Close button -->
+        <button id="close-banner" style="position: absolute; top: 10px; right: 10px;">X</button>
+    </div>
     <main id="main-index">
+
         <section id="events-section">
             <h3>Events</h3>
             <div>
-                <h4>Super Cool Event Name</h4>
-                <p>Description about that super cool event</p>
+                <ul>
+                    <li>
+                        <p>Annual Business Awards Gala</p>
+                    </li>
+                    <li>
+                        <p>Monthly Networking Breakfast</p>
+                    </li>
+                    <li>
+                        <p>Small Business Development Workshops</p>
+                    </li>
+                    <li>
+                        <p>Local Business Expo</p>
+                    </li>
+                    <li>
+                        <p>Community Service Day</p>
+                    </li>
+                    <li>
+                        <p>Young Professionals Networking Event</p>
+                    </li>
+                    <li>
+                        <p>Women in Business Luncheon</p>
+                    </li>
+                    <li>
+                        <p>Annual Golf Tournament</p>
+                    </li>
+                    <li>
+                        <p>Summer Concert Series in the Park</p>
+                    </li>
+                    <li>
+                        <p>Shop Local Holiday Campaign</p>
+                    </li>
+                    <li>
+                        <p>Leadership Development Seminar</p>
+                    </li>
+                    <li>
+                        <p>Economic Outlook Forum</p>
+                    </li>
+                </ul>
+
             </div>
         </section>
         <section id="weather-section">
             <h3>Weather</h3>
-            <div>
+            <div id="information">
                 <p>
                     <span id="main-weather-icon" class="material-symbols-outlined"></span>
                     Today's Weather:

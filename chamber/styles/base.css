@@ -25,6 +25,21 @@ header {
 
 }
 
+#weekly-banner {
+	display: none; 
+	position: absolute; 
+	top: 50%; left: 50%; 
+	transform: translate(-50%, -50%); 
+	z-index: 1000; background-color: white; 
+	padding: 20px; 
+	border: 4px solid black;
+}
+#weekly-banner p {
+	font-size: 5em;
+}
+#weekly-banner button {
+	font-size: 2em;
+}
 nav div {
 	text-align: center;
 }
