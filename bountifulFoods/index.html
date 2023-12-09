@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <!-- scripts -->
+    <script src="scripts/common.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/drinkCounter.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <h1>Bountiful Foods</h1>
+        <button id="menu"></button>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li class="nav-element"><a href="#">Home</a></li>
+            <li class="nav-element"><a href="#">Order Drink</a></li>
+            <li class="nav-element"><a href="#">About Us</a></li>
+        </ul>
+    </nav>
+    <section id="home-banner">
+        <img src="images/strawberry-smoothie-small.webp" alt="Strawberry Smoothie on a Table">
+        <button id="call-to-action">Order Now!</button>
+    </section>
+    <section id="home-info" class="home-cards">
+        <h2>A Taste of California</h2>
+        <div class="pink-indent">
+            <p>Indulge in the sunny spirit of California with every sip! Our smoothies are a blend of West Coast vibes
+                and
+                the juiciest fruits kissed by the golden California sun. Sip, smile, and let the
+                flavors take you on a refreshing journey through the vibrant orchards and lush landscapes of the Golden
+                State.</p>
+        </div>
+    </section>
+    <section id="home-drink-counter" class="home-cards">
+        <h2>My Flavor History</h2>
+        <div class="pink-indent">
+            <h3>Order 10 Get one Free!</h3>
+            <p>Drinks Enjoyed: <span id="drinks-purchased"></span></p>
+            <!-- <p>Orders Remaining: <span id="drinks-remaining">TODO</span></p> -->
+        </div>
+    </section>
+    <section id="home-weather" class="home-cards">
+        <h2>Today's Weather</h2>
+        <div class="pink-indent">
+            <div id="today-weather"></div>
+            <div id="forecast-grid"></div>
+
+        </div>
+    </section>
+</body>
+
+</html>

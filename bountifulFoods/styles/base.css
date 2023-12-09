@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+
+/* GENERIC */
+:root {
+    font-family: 'Montserrat', sans-serif;
+
+    --fresh-green: #8CC84B; /* Primary Color */
+    --mint: #A1E8AF; /* Secondary */
+    --white: #FFF; /* Background Color */
+    --light-gray: #ECECEC; /* Light Accent Color */
+    --berry-pink: #FF7E99; /* Accent Color */
+}
+body {
+    margin: 0;
+}
+/* HEADER */
+/* 
+*/
+header {
+    background-color: var(--fresh-green);
+    padding: 20px 10px;
+    color: black;
+}
+h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    max-width: 80%;
+    display: inline-block;
+
+}
+
+/* NAV AND MENU */
+/* 
+*/
+nav {
+    background-color: var(--fresh-green);
+    color: white;
+    text-align: center; 
+}
+#menu {
+	font-size: 1.5rem;
+	border: 1px solid rgba(0,0,0,.3);
+    min-width: 45px;
+	padding: 3px 8px 6px;
+    margin-left: 5%;
+	background-color: var(--light-gray);
+	color: #000;
+    display: inline-block;
+}
+
+#menu::before {
+	content: "☰";
+    font-size: 1em;
+}
+
+#menu.open::before {
+	content: "❎";
+    font-size: 0.8em;
+}
+
+.navigation li {
+    display: none;
+}
+.open li {
+	display: block;
+	width: 100%;
+}
+.open li a {
+	display: block;
+}
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	background-color: var(--mint);
+	color: #fff;
+    font-weight: 500;
+}
+.navigation li a {
+	display: block;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+}
+li.nav-element {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+nav ul {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style: none;
+    padding-inline-start: 0px;
+
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.6em;    
+}
+nav ul li:hover {
+    text-decoration: none;
+}
+
+/* BANNER AND CALL TO ACTION */
+/* 
+*/
+section#home-banner {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+section#home-banner img {
+    max-width: 100%;
+}
+button#call-to-action {
+    position: absolute;
+    top: 60%; left: 50%; 
+	transform: translate(-50%, -50%);
+    padding: 5px 8px;
+    font-size: 1.5em;
+    /* box-shadow: 5px 5px black; */
+    border: 2px solid black;
+    font-weight: 500;
+    
+}
+button#call-to-action:hover {
+    background-color: var(--berry-pink);
+}
+
+/* HOME INFO/Weather SECTION */
+
+section.home-cards {
+    margin: 20px 40px;
+    padding: 5px 10px;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 8px 8px var(--mint);
+
+}
+section.home-cards h2 {
+    padding: 0px 5px 0px;
+    margin-bottom: 8px;
+    margin-top: 12px
+}
+section.home-cards div.pink-indent {
+    margin: 0px 12px 12px 7px;
+    border-left: 5px solid var(--berry-pink);
+    padding-left: 8px;
+}
+section.home-cards div.pink-indent * {
+    padding-left: 3px;
+}
+
+div#forecast-grid {
+    /* width: 100%; */
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+div#today-weather {
+    border-bottom: 1px solid black;
+}
