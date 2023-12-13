@@ -20,6 +20,8 @@ header {
     background-color: var(--fresh-green);
     padding: 20px 10px;
     color: black;
+    display: block;
+    text-align: center;
 }
 h1 {
     margin: 0;
@@ -28,7 +30,13 @@ h1 {
     display: inline-block;
 
 }
+h2 {
+    text-align: center;
+}
 
+.img-align {
+    text-align: center;
+}
 /* NAV AND MENU */
 /* 
 */
@@ -46,6 +54,7 @@ nav {
 	background-color: var(--light-gray);
 	color: #000;
     display: inline-block;
+    border-radius: 8px;
 }
 
 #menu::before {
@@ -122,8 +131,9 @@ button#call-to-action {
     padding: 5px 8px;
     font-size: 1.5em;
     /* box-shadow: 5px 5px black; */
-    border: 2px solid black;
+    border: 5px solid var(--berry-pink);
     font-weight: 500;
+    border-radius: 8px;
     
 }
 button#call-to-action:hover {
@@ -138,7 +148,11 @@ section.home-cards {
     background-color: white;
     border: 1px solid black;
     box-shadow: 8px 8px var(--mint);
+    border-radius: 8px;
 
+}
+section.home-cards {
+    padding: 15px;
 }
 section.home-cards h2 {
     padding: 0px 5px 0px;
@@ -162,4 +176,170 @@ div#forecast-grid {
 
 div#today-weather {
     border-bottom: 1px solid black;
+}
+
+/* ORDER FORM STYLES */
+/* 
+*/
+main#order-main {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main#order-main h2{
+    text-align: center;
+    padding-bottom: 5px;
+    border-bottom: 5px solid var(--berry-pink);
+}
+main#order-main p {
+    margin-top: 10px;
+}
+
+form#order-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    /* FIX COLORING */
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button#order-submit-button {
+    background-color: var(--fresh-green);
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button#order-submit-button:hover {
+    background-color:var(--mint);
+}
+
+/* CONFIRMATION STYLING */
+/* 
+*/
+main#confirmation-main h2 {
+    text-align: center;
+}
+main#confirmation-main ul li {
+    list-style: circle;
+    margin-left: 18px;
+}
+
+#thankyou-section {
+    font-weight: 500;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#confirm-info-section,
+#nutrition-section,
+#contact-section {
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+#confirm-info-section p,
+#nutrition-section p,
+#contact-section p {
+    margin: 5px 0;
+}
+
+button#review-button {
+    background-color: var(--fresh-green);
+    color: #FFFFFF;
+    font-weight: 500;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button#review-button:hover {
+    background-color: var(--mint);
+}
+
+/* ABOUT STYLING */
+/* 
+*/
+
+main#about-main img {
+    max-width: 100%;
+}
+section#map-embed {
+    margin: 40px;
+}
+
+section#map-embed iframe {
+    max-width: 100%;
+    border-radius: 8px;
+    border: 1px solid black;
+    box-shadow: 8px 8px var(--mint);
+
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--fresh-green);
+    font-weight: 500;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* RESOURCE/ATTRIBUTION SECTION */
+section#attribution {
+    margin-bottom: 20px;
+}
+
+section#attribution a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* SOCIAL MEDIA LINKS */
+section#social-media {
+    margin-bottom: 20px;
+}
+
+section#social-media a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+/* LAST MODIFIED DATE */
+span#last-modified {
+    display: block;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+/* CONTACT INFORMATION */
+section#contact-info {
+    margin-bottom: 20px;
+}
+
+section#contact-info p {
+    margin: 5px 0;
 }

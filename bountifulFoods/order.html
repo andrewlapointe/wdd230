@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <!-- scripts -->
+    <script src="scripts/common.js" defer></script>
+    <script src="scripts/order.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <h1>Bountiful Foods</h1>
+        <button id="menu"></button>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li class="nav-element"><a href="index.html">Home</a></li>
+            <li class="nav-element"><a href="order.html">Order Drink</a></li>
+            <li class="nav-element"><a href="about.html">About Us</a></li>
+        </ul>
+    </nav>
+    <main id="order-main">
+
+        <form id="order-form" action="confirmation.html" method="get">
+            <h2>Drink Order Form</h2>
+            <!-- Personal Information -->
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" required>
+
+            <!-- Fruit Selection -->
+            <label for="fruit1">Fruit 1:</label>
+            <select id="fruit1" name="fruit1" required>
+                <option value="" disabled selected>Select your option</option>
+            </select>
+
+            <label for="fruit2">Fruit 2:</label>
+            <select id="fruit2" name="fruit2" required>
+                <option value="" disabled selected>Select your option</option>
+            </select>
+
+            <label for="fruit3">Fruit 3:</label>
+            <select id="fruit3" name="fruit3" required>
+                <option value="" disabled selected>Select your option</option>
+            </select>
+
+            <!-- Special Instructions -->
+            <label for="instructions">Special Instructions:</label>
+            <textarea id="instructions" name="instructions" rows="4" cols="50"></textarea>
+
+            <!-- Payment Information -->
+            <p>Payment is received when the drink is picked up.</p>
+
+            <!-- Submit Button -->
+            <div class="img-align">
+                <button id="order-submit-button" type="submit">Submit Order</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <!-- RESOURCE/ATTRIBUTION SECTION -->
+        <section id="attribution">
+            <p>Resources and attributions:</p>
+            <p><a href="https://www.fruityvice.com" target="_blank">www.fruityvice.com</a></p>
+            <p><a href="https://openweathermap.org" target="_blank">openweathermap.org</a></p>
+        </section>
+
+        <!-- SOCIAL MEDIA LINKS -->
+        <section id="social-media">
+            <a href="#" target="_blank">Facebook</a>
+            <a href="#" target="_blank">Twitter</a>
+            <a href="#" target="_blank">Instagram</a>
+        </section>
+
+        <!-- LAST MODIFIED DATE -->
+        <span id="last-modified">Last modified:
+            <script>document.write(document.lastModified);</script>
+        </span>
+
+        <!-- CONTACT INFORMATION -->
+        <section id="contact-info">
+            <p>Email: info@bountifulfoods.com</p>
+            <p>Phone: +1 (415) 555-5668</p>
+            <p>Address: 123 Fresh Street, California, USA</p>
+        </section>
+    </footer>
+</body>
+
+</html>

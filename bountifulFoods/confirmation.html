@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bountiful Foods Home</title>
+    <title>Order Confirmation</title>
 
     <!-- stylesheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
@@ -14,8 +14,7 @@
 
     <!-- scripts -->
     <script src="scripts/common.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
-    <script src="scripts/drinkCounter.js" defer></script>
+    <script src="scripts/confirmation.js" defer></script>
 
 </head>
 
@@ -31,47 +30,55 @@
             <li class="nav-element"><a href="about.html">About Us</a></li>
         </ul>
     </nav>
-    <section id="home-banner">
-        <picture>
-            <!-- for large viewports -->
-            <source srcset="images/large/Strawberry-smoothie-large.webp" height="600px" loading="lazy"
-                media="(min-width: 1400px)">
-            <!-- For viewports larger than 767px and up to 1999px -->
-            <source srcset="images/medium/strawberry-smoothie-medium.webp"
-                media="(min-width: 768px) and (max-width: 1399px)" height="450px" loading="lazy">
-            <!-- For mobile view (up to 767px) -->
-            <img id="hero-image" src="images/small/strawberry-smoothie-small.webp" alt="hero image of smoothie">
-        </picture>
-        <button id="call-to-action" onclick="location.href = 'order.html';">Order Now!</button>
-    </section>
-    <main id="home-main">
-        <section id="home-info" class="home-cards">
-            <h2>A Taste of California</h2>
+    <main id="confirmation-main">
+        <h2>Order Sent!</h2>
+        <section id="thankyou-section" class="home-cards">
             <div class="pink-indent">
-                <p>Indulge in the sunny spirit of California with every sip! Our smoothies are a blend of West Coast
-                    vibes
-                    and
-                    the juiciest fruits kissed by the golden California sun. Sip, smile, and let the
-                    flavors take you on a refreshing journey through the vibrant orchards and lush landscapes of the
-                    Golden
-                    State.</p>
+                <p>Thank you for ordering from Bountiful Foods!</p>
+                <p>Your drink should be ready around <span id="pickup-time"></span>.</p>
+                <p>If we have made your day brighter consider leaving a review!</p>
+            </div>
+            <div class="img-align">
+                <button id="review-button">Leave a Review</button>
             </div>
         </section>
-        <section id="home-drink-counter" class="home-cards">
-            <h2>Drink History</h2>
+        <section id="confirm-info-section" class="home-cards">
+            <h3>Personal Info</h3>
             <div class="pink-indent">
-                <h3>Order 10 Get one Free!</h3>
-                <p>Drinks Enjoyed: <span id="drinks-purchased"></span></p>
-                <!-- <p>Orders Remaining: <span id="drinks-remaining">TODO</span></p> -->
+                <p>Name: <span id="firstName">None</span></p>
+                <p>Email: <span id="email">None</span></p>
+                <p>Phone Number: <span id="phoneNumber">None</span></p>
+                <p>Drink Ingredients:</p>
+                <ul>
+                    <li>
+                        <p><span id="fruit1">None</span></p>
+                    </li>
+
+                    <li>
+                        <p><span id="fruit2">None</span></p>
+                    </li>
+                    <li>
+                        <p><span id="fruit3">None</span></p>
+                    </li>
+
+                </ul>
+                <p>Special Instructions: <span id="instructions">None</span></p>
             </div>
         </section>
-        <section id="home-weather" class="home-cards">
-            <h2>Today's Weather</h2>
+        <section id="nutrition-section" class="home-cards">
+            <h3>Nutrition Info</h3>
             <div class="pink-indent">
-
-                <div id="today-weather"></div>
-                <div id="forecast-grid"></div>
-
+                <p>Calories: <span id="calories"></span></p>
+                <p>Protein: <span id="protein"></span></p>
+                <p>Fat: <span id="fat"></span></p>
+                <p>Carbohydrates: <span id="carbohydrates"></span></p>
+                <p>Sugar: <span id="sugar"></span></p>
+            </div>
+        </section>
+        <section id="contact-section" class="home-cards">
+            <h3>Problem with you Order?</h3>
+            <div class="pink-indent">
+                <p>If need anything at all please call at: <br><span id="contact-number">(415) 555-5668</span></p>
             </div>
         </section>
     </main>

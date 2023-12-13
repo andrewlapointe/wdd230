@@ -1,7 +1,7 @@
 const drinksPurchased = document.getElementById('drinks-purchased');
 const drinksRemaining = document.getElementById('drinks-remaining');
 
-purchasedLSKEY = 'purchased';
+const purchasedLSKEY = 'purchased';
 
 function loadValues() {
     drinksPurchased.innerHTML = getPurchasedFromLocalStorage()

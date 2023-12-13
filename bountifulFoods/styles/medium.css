@@ -1,0 +1,52 @@
+@media only screen and (min-width: 767px) {
+    :root {
+        font-size: 23px;
+    }
+    h1 {
+        font-size: 2.2em;
+    }
+    /* HOME */
+    main#home-main {
+        display: grid;
+        grid-template-columns: 1fr 300px;
+    }
+    div#forecast-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 0;
+    }
+    section#home-weather{
+        grid-column: 1/3;
+    }
+
+    section.home-cards {
+        margin: 1.2em;
+        padding: 1em;
+    }
+
+    /* ORDER */
+    main#order-main {
+        font-size: 25px;
+    }
+
+    main#order-main form *{
+        padding: 2%;
+    }
+    main#order-main form {
+        max-width: 70%;
+    }
+
+    /* CONFIRMATION */
+    main#confirmation-main section * {
+        padding: 1% 2%;
+    }
+
+    /* ABOUT */
+    main#about-main {
+        font-size: 30px;
+    }
+    div.about-picture {
+        padding: 20px;
+    }
+
+}
