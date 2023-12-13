@@ -2,6 +2,7 @@
 const lat = 33.1215196;
 const lon = -117.287802;
 const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=1d2089b9d3e771d71cf555b564974057&units=imperial`;
+const weatherURL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=1d2089b9d3e771d71cf555b564974057&units=imperial`
 
 // Constant representing one day in milliseconds
 const ONE_DAY = 24 * 60 * 60 * 1000;
@@ -27,7 +28,6 @@ function showForecast(forecasts) {
         filteredForecasts.push(forecasts.filter(x => x.dt_txt.startsWith(dates[i] + ' 09:00:00')))
 
     }
-    console.log(filteredForecasts)
 
     // Get the element where the forecast will be displayed
     let weatherElt = document.getElementById('forecast-grid');
@@ -47,35 +47,17 @@ function showForecast(forecasts) {
 
 }
 
-function showWeather(forecasts) {
-    
+function showWeather(weatherData) {
     date = new Date();
     strDate = date.toISOString().slice(0,10)
-    console.log(strDate)
-    // Find the highest temperature for each date
-    let highTemps = date => {
-        // Filter forecasts for the specific date
-        const filteredForecasts = forecasts.filter(x => x.dt_txt.startsWith(strDate));
-        // Find the forecast with the highest temperature
-        return filteredForecasts.length > 0 ? filteredForecasts.reduce((currentObj, highObj) => currentObj.main.temp > highObj.main.temp ? currentObj : highObj) : null;
-    };    
-    
-    // Find the lowest temperature for each date
-    let lowTemps = date => {
-        // Filter forecasts for the specific date
-        const filteredForecasts = forecasts.filter(x => x.dt_txt.startsWith(strDate));
-        // Find the forecast with the lowest temperature
-        return filteredForecasts.length > 0 ? filteredForecasts.reduce((currentObj, lowObj) => currentObj.main.temp < lowObj.main.temp ? currentObj : lowObj) : null;
-    }; 
     
     let todayWeather = document.getElementById('today-weather');
     
     let todayNewSection = document.createElement('section');
-    if (highTemps[0] && lowTemps[0]) {
-        todayNewSection.innerHTML = `<p>High: ${highTemps[0].main.temp.toFixed(0)}&deg;</p><p>Low: ${lowTemps[0].main.temp.toFixed(0)}&deg;</p>`;
-    } else {
-        todayNewSection.innerHTML = `<h3>${date.toString().slice(0,10)}</h3><p>No data available for this date</p>`;
-    }
+     
+    todayNewSection.innerHTML = `<h3>${date.toString().slice(0,10)}</h3><p>High: ${weatherData.main.temp_max.toFixed(0)}&deg;</p><p>Low: ${weatherData.main.temp_min.toFixed(0)}&deg;</p>`;
+
+        // todayNewSection.innerHTML = `<h3>${date.toString().slice(0,10)}</h3><p>No data available for this date</p>`;
     todayWeather.append(todayNewSection);
 }
 
@@ -87,9 +69,9 @@ async function fetchForecast() {
         if (response.ok) {
             // Parse the JSON response
             const data = await response.json();      
+            console.log(data);
             // Pass the forecast data to showForecast function
             showForecast(data.list);
-            showWeather(data.list);
         } else {
             // Handle HTTP errors
             throw Error(await response.text());
@@ -99,6 +81,28 @@ async function fetchForecast() {
         console.log(error);
     }
 }
+
+async function fetchWeather() {
+    try {
+        // Fetch data from the API
+        const response = await fetch(weatherURL);
+        if (response.ok) {
+            // Parse the JSON response
+            const data = await response.json();      
+            console.log(data);
+            // Pass the forecast data to showForecast function
+            showWeather(data);
+        } else {
+            // Handle HTTP errors
+            throw Error(await response.text());
+        }
+    } catch (error) {
+        // Log any errors to the console
+        console.log(error);
+    }
+}
+
+
 
 function sentenceCase(str) {
     if ((str === null) || (str === ''))
@@ -115,4 +119,5 @@ function sentenceCase(str) {
 
 // Invoke the function to fetch and display the forecast
 fetchForecast();
+fetchWeather()
  
