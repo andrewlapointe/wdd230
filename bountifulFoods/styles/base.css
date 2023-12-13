@@ -288,17 +288,18 @@ button#review-button:hover {
 
 main#about-main img {
     max-width: 100%;
+    
 }
-section#map-embed {
+div#map-embed {
     margin: 40px;
+
 }
 
-section#map-embed iframe {
-    max-width: 100%;
-    border-radius: 8px;
-    border: 1px solid black;
-    box-shadow: 8px 8px var(--mint);
-
+iframe {
+width: 100%;
+border: 1px solid black;
+box-shadow: 8px 8px var(--mint);
+border-radius: 8px;
 }
 
 /* FOOTER */
