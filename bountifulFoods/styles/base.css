@@ -266,7 +266,7 @@ main#confirmation-main ul li {
 
 button#review-button {
     background-color: var(--fresh-green);
-    color: #FFFFFF;
+    color: #000;
     font-weight: 500;
     padding: 10px 20px;
     border: none;
