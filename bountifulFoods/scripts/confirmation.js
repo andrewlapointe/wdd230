@@ -62,6 +62,14 @@ function getTimePlus10Minutes() {
     span.innerHTML = `${hours}:${minutes}`;
 }
 
+const currentDate = new Date();
+
+// Get the span element by its id
+const dateSpan = document.getElementById('date-here');
+
+// Set the inner text of the span to the current date
+dateSpan.innerText = currentDate.toDateString();
+
 async function fetchFruits() {
     try {
         const response = await fetch(jsonFile);
