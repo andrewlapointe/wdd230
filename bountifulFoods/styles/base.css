@@ -221,7 +221,8 @@ textarea {
 
 button#order-submit-button {
     background-color: var(--fresh-green);
-    color: #fff;
+    color: #000;
+    font-weight: 500;
     padding: 10px 15px;
     border: none;
     border-radius: 4px;
@@ -299,8 +300,8 @@ section#map-embed iframe {
 /* FOOTER */
 footer {
     background-color: var(--fresh-green);
-    font-weight: 500;
-    color: #fff;
+    font-weight: 600;
+    color: #000;
     padding: 20px;
     text-align: center;
 }
@@ -308,10 +309,11 @@ footer {
 /* RESOURCE/ATTRIBUTION SECTION */
 section#attribution {
     margin-bottom: 20px;
+    color: #000;
 }
 
 section#attribution a {
-    color: #fff;
+    color: #000;
     text-decoration: underline;
 }
 
@@ -323,7 +325,7 @@ section#social-media {
 section#social-media a {
     display: inline-block;
     margin: 0 10px;
-    color: #fff;
+    color: #000;
     text-decoration: none;
     font-size: 1.5em;
 }
